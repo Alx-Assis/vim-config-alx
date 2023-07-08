@@ -128,6 +128,13 @@ map <c-t> :call Terminal()<cr>
 
 autocmd TerminalOpen * if &buftype == 'terminal' | setlocal nobuflisted | endif
 
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 source ~/.vim/coc.vimrc
 
